@@ -1,0 +1,7 @@
+.heading {
+    padding: auto;
+    display: flexbox;
+}
+button{
+    border-radius: 10%;
+}
