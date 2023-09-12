@@ -53,7 +53,7 @@ export function Quiz(props) {
 
   React.useEffect(() => {
     // if (showStart === true) {
-      alert("Answer Carefully!!")
+      // alert("Answer Carefully!!")
       match();
         setQuestions(
           type.map(function (question) {
