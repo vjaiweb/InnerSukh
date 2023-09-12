@@ -1,4 +1,13 @@
 const questions = [
+  {
+    text: "Experiencing muscle tension or physical symptoms of anxiety, such as a racing heart or sweaty palms?",
+    options: [
+      {  id: 1, opt: "a", text: "Not at all" },
+      {  id: 2, opt: "b", text: "Several days"  },
+      {  id: 3, opt: "c", text: "More than half the days" },
+      {  id: 4, opt: "d", text: "Nearly every day" }
+    ]
+  },
     {
       text: "Feeling nervous, anxious, or on edge?",
       options: [
@@ -10,6 +19,15 @@ const questions = [
     },
     {
       text: " Not being able to stop or control worrying?",
+      options: [
+        {  id: 1, opt: "a", text: "Not at all" },
+        {  id: 2, opt: "b", text: "Several days"  },
+        {  id: 3, opt: "c", text: "More than half the days" },
+        {  id: 4, opt: "d", text: "Nearly every day" }
+      ]
+    },
+    {
+      text: "Feeling a sense of impending doom or that something terrible is about to happen?",
       options: [
         {  id: 1, opt: "a", text: "Not at all" },
         {  id: 2, opt: "b", text: "Several days"  },
@@ -35,6 +53,7 @@ const questions = [
         {  id: 4, opt: "d", text: "Nearly every day" }
       ]
     },
+    
     {
       text: "Being so restless that it is hard to sit still?",
       options: [
@@ -44,6 +63,16 @@ const questions = [
         {  id: 4, opt: "d", text: "Nearly every day" }
       ]
     },
+    {
+      text: "Avoiding situations or places because they make you feel anxious or uncomfortable?",
+      options: [
+        {  id: 1, opt: "a", text: "Not at all" },
+        {  id: 2, opt: "b", text: "Several days"  },
+        {  id: 3, opt: "c", text: "More than half the days" },
+        {  id: 4, opt: "d", text: "Nearly every day" }
+      ]
+    },
+
     {
       text: "Becoming easily annoyed or irritable?",
       options: [
@@ -63,34 +92,8 @@ const questions = [
       ]
     },
 
-    {
-      text: "Feeling a sense of impending doom or that something terrible is about to happen?",
-      options: [
-        {  id: 1, opt: "a", text: "Not at all" },
-        {  id: 2, opt: "b", text: "Several days"  },
-        {  id: 3, opt: "c", text: "More than half the days" },
-        {  id: 4, opt: "d", text: "Nearly every day" }
-      ]
-    },
-    {
-      text: "Experiencing muscle tension or physical symptoms of anxiety, such as a racing heart or sweaty palms?",
-      options: [
-        {  id: 1, opt: "a", text: "Not at all" },
-        {  id: 2, opt: "b", text: "Several days"  },
-        {  id: 3, opt: "c", text: "More than half the days" },
-        {  id: 4, opt: "d", text: "Nearly every day" }
-      ]
-    },
-    {
-      text: "Avoiding situations or places because they make you feel anxious or uncomfortable?",
-      options: [
-        {  id: 1, opt: "a", text: "Not at all" },
-        {  id: 2, opt: "b", text: "Several days"  },
-        {  id: 3, opt: "c", text: "More than half the days" },
-        {  id: 4, opt: "d", text: "Nearly every day" }
-      ]
-    },
-
+    
+    
   ];
 
 export default questions;  

@@ -12,6 +12,8 @@ function App() {
     <>
       <Router>
          <Drop/>
+         {/* <Quiz /> */}
+
 
       </Router>
   </> 
