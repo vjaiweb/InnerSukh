@@ -3,6 +3,8 @@
   }
   
   .app{
+    background-color: rgb(233, 244, 255);
+    overflow-x: hidden;
   }
   
   .start-container{
@@ -79,6 +81,7 @@
         font-size: 18px;
         line-height: 19px;
         color: #293264;
+        padding-bottom: 15px;
   }
   
   .quiz-container-question-options-container{
