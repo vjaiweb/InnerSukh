@@ -1,27 +1,32 @@
 import React, { useState } from "react";
 import "./Quiz.css";
-import quizques from "../../Data/DepressionQuizData";
+import AnxietyQues from "../../Data/AnxietyQuizData";
+import DepressionQues from "../../Data/DepressionQuizData";
+import AddictionQues from "../../Data/AddictionQuizData";
+import YouthMentalQues from "../../Data/YouthMentalQuizData";
 import { Quest } from "../Quest/Quest";
 
-export function Quiz() {
+export function Quiz(props) {
   const [showStart, setShowStart] = React.useState(true);
   const [score, setScore] = React.useState(0);
   const [showAnswers, setShowAnswers] = React.useState(false);
   const [questions, setQuestions] = React.useState([]);
   const [allComplete, setAllComplete] = React.useState(false);
-
+  let type 
   // function startQuiz() {
   //   setShowStart(false);
   // }
 
-  function playAgain() {
-    setShowStart(true);
-    setShowAnswers(false);
-    setAllComplete(false);
+
+  function submit() {
+    setShowAnswers(true);
   }
 
-  function checkAnswers() {
-    setShowAnswers(true);
+  function match(){
+    if(props.type === "anxiety") type = AnxietyQues
+    if(props.type === "depression") type = DepressionQues
+    if(props.type === "addiction") type = AddictionQues
+    if(props.type === "youth") type = YouthMentalQues
   }
 
   function selectAnswer(event, quest_id, option_id) {
@@ -48,8 +53,10 @@ export function Quiz() {
 
   React.useEffect(() => {
     // if (showStart === true) {
+      alert("Answer Carefully!!")
+      match();
         setQuestions(
-          quizques.map(function (question) {
+          type.map(function (question) {
             return {
               question: question.text,
               options: question.options,
@@ -84,7 +91,7 @@ export function Quiz() {
     <div className="app">
       {/* {showStart ? <Start startQuiz={startQuiz}/> :  */}
       <div className="row p-3">
-           <div className="col-md-6 question-card p-3">
+      <div className="col-md-7 question-card p-3">
       <div className="quiz-container">
         {quests}
         {showAnswers ? (
@@ -92,17 +99,14 @@ export function Quiz() {
             <h3 className="button-container-score">
               {"You scored " + score + "/40 correct answers"}
             </h3>
-            <button className="button" onClick={playAgain}>
-              Play Again
-            </button>
           </div>
         ) : (
           <button
             className="button"
             disabled={!allComplete}
-            onClick={checkAnswers}
+            onClick={submit}
           >
-            Check Answers
+            Submit
           </button>
         )}
       </div>

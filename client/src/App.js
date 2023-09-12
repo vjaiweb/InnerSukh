@@ -10,7 +10,7 @@ function App() {
     <>
       <Router>
         
-      <Quiz />
+      <Quiz type={"addiction"}/>
  
 
       </Router>
