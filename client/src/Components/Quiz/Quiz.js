@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Quiz.css";
-import quizques from "../../Data/QuizData";
+import quizques from "../../Data/DepressionQuizData";
 import { Quest } from "../Quest/Quest";
 
 export function Quiz() {
