@@ -1,7 +1,5 @@
 .meditation-container {
   background-image: url('../../Assets/Images/meditatingBackground.gif');
-  /* Replace with the correct path to your GIF */
-  /* background-size: cover; */
   background-size:cover;
   background-repeat:no-repeat;
   background-position: center;
