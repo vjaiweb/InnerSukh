@@ -3,6 +3,7 @@ import Week from '../Components/21days/Week';
 import Day from '../Components/21days/Day';
 import Content from '../Components/21days/Content';
 import "./21day.css"
+import { Link } from 'react-router-dom';
 
 function Drop() {
   const [selectedWeek, setSelectedWeek] = useState(null);
@@ -18,7 +19,7 @@ function Drop() {
   };
 
   return (
-    <div className='heading'>
+    <div className='heading'>1
         <h1>21 Days </h1>
       <div className='week'>
         {[1, 2, 3].map((week) => (
@@ -50,6 +51,7 @@ function Drop() {
           <Content content="Gratitude" />
         </div>
       )}
+      <Link to={'/meditation'}>Meditation</Link>
     </div>
   );
 }

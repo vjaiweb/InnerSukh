@@ -4,6 +4,7 @@ import { BrowserRouter as Router,  Route, Routes,useParams } from "react-router-
 import "./App.css";
 import { Quiz } from "./Components/Quiz/Quiz.js";
 import Drop from "./pages/21day";
+import Meditation from "./pages/meditation/Meditation";
 
 function App() {
   
@@ -11,7 +12,11 @@ function App() {
   return (
     <>
       <Router>
-         <Drop/>
+        <Routes>
+          <Route path="/" element={<Drop/>}/>
+          <Route path="/meditation" element={<Meditation/>}/>
+        </Routes>
+         
          {/* <Quiz /> */}
 
 
