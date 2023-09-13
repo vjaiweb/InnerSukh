@@ -1,0 +1,60 @@
+/* day.css */
+
+/* Day tile styles */
+.day-tile {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .day-tile.expanded {
+    background-color: #f0f0f0;
+  }
+  
+  .day-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Progress bar styles */
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.3s;
+  }
+  
+  /* Button styles */
+  .content-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .content-button.gratitude {
+    background-color: #ffc107;
+  }
+  
+  /* Completed button styles */
+  .content-button.completed {
+    background-color: #4caf50;
+  }
+  
+  /* Completion message styles */
+  .day-complete-message {
+    color: #4caf50;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
