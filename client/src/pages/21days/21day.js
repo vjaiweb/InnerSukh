@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
-// 21day.js
+
 
 import React, { useState } from 'react';
 import Week from '../../Components/21days/Week';
 import Day from '../../Components/21days/Day';
-import './21day.css'; // Import the CSS file
-// import { Link } from 'react-router-dom';
+import './21day.css'; 
+import { Link } from 'react-router-dom';
 
 
 function Drop() {
@@ -47,7 +47,7 @@ function Drop() {
         {selectedWeek && (
           <div>
             <h2>Week {selectedWeek} Days:</h2>
-            <div className='day-tile-container'> {/* New container */}
+            <div className='day-tile-container'> 
               {[1, 2, 3, 4, 5, 6, 7].map((day) => (
                 <Day
                   key={day}
