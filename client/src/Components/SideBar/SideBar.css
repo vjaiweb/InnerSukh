@@ -1,0 +1,46 @@
+.sidebar-container{
+  background-color: #333b72;
+    color: white;  
+    text-decoration: none;
+    
+ 
+}
+
+.icon-container{
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  }
+  
+
+div.icon-container a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+
+a{
+  color: white;
+}
+
+
+.icon-container:hover {
+  background-color: rgb(245, 247, 251);
+  color: #333b72;
+  .my-icon:hover{
+    color: #333b72;
+  }
+}
+
+.my-icon{
+  color: #E0E6F2;
+}
+/* 
+.my-icon:hover{
+  color: #15294B;
+} */
+
+.sidebar-active{
+  background-color: #000000;
+  color: #000000;
+}
