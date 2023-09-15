@@ -6,4 +6,19 @@
   background-color: #082939;
   width: 100vw;
   height: 100vh;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transparent-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  /* Remove the default focus outline */
+}
+
+.transparent-button.hidden {
+  display: none;
 }
