@@ -1,0 +1,45 @@
+.typing-animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.typing-animation {
+    text-align: center;
+}
+
+.cursive-text {
+    position: absolute;
+    font-family: cursive;
+    font-size: 50px;
+    background-color:white ;
+    padding:20px;
+    border-radius: 20px;
+    color:rgb(136, 136, 186);
+    font-weight: bold;
+    margin-top:30vh;
+    text-align: center;
+    left:10px;
+    width:50vw;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}

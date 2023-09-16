@@ -10,6 +10,7 @@ import NavBar from "../src/Components/Navbar/NavBar";
 import SideBar from "../src/Components/SideBar/SideBar";
 
 
+import Affirmation from "./pages/Affirmation/Affirmation";
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Drop/>}/>
           <Route path="/meditation" element={<Meditation/>}/>
           <Route path="/gratitude" element={<Gratitude/>}/>
+          <Route path="/affirmation" element={<Affirmation text={"Hello Gurmeet"}/>}/>
         </Routes>
          
          {/* <Quiz /> */}
