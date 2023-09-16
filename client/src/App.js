@@ -21,13 +21,11 @@ function App() {
       <div className="main-container">
           <NavBar />
         <Routes>
-          <Route path="/" element={<Drop/>}/>
+          <Route path="/streak" element={<Drop/>}/>
           <Route path="/meditation" element={<Meditation/>}/>
           <Route path="/gratitude" element={<Gratitude/>}/>
           <Route path="/affirmation" element={<Affirmation text={"Hello Gurmeet"}/>}/>
         </Routes>
-         
-         {/* <Quiz /> */}
       </div>
 
       </Router>
