@@ -8,6 +8,7 @@ import Meditation from "./pages/meditation/Meditation";
 import Gratitude from "./pages/gratitude/Gratitude";
 import NavBar from "../src/Components/Navbar/NavBar";
 import SideBar from "../src/Components/SideBar/SideBar";
+import Home from "../src/pages/Home/Home";
 
 
 import Affirmation from "./pages/Affirmation/Affirmation";
@@ -21,7 +22,8 @@ function App() {
       <div className="main-container">
           <NavBar />
         <Routes>
-          <Route path="/" element={<Drop/>}/>
+          {/* <Route path="/" element={<Drop/>}/> */}
+          <Route path="/" element={<Home/>}/>
           <Route path="/meditation" element={<Meditation/>}/>
           <Route path="/gratitude" element={<Gratitude/>}/>
           <Route path="/affirmation" element={<Affirmation text={"Hello Gurmeet"}/>}/>
