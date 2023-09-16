@@ -1,18 +1,16 @@
+/* Day.css */
 
+/* Day Tile Styles */
 .day-tile {
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 8px; 
-  padding: 20px; 
+  border-radius: 8px;
+  padding: 20px;
   margin: 20px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
   position: relative;
-}
-
-.day-tile.expanded {
-  background-color: #f0f0f0; 
 }
 
 .day-title {
@@ -21,35 +19,45 @@
   margin-bottom: 10px;
 }
 
-/* Card Styles */
-.card-wrapper {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 80px;
-  margin: 20px 60px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+/* Progress Bar Styles */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ccc;
+  position: relative;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: green;
+}
+
+/* Task Container Styles */
+.task-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: calc(50% - 10px);
 }
-.card-container {
+
+/* Task Styles */
+.task {
+  margin: 20px 0;
+  text-align: center;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
-
-.card-img {
-  display: block;
-  height: 200px; 
-  width: 100px; 
-  margin-bottom: 10px;
+.task-logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
 }
 
-.card-title {
+.task-title {
   color: #333;
   font-size: 1.2rem;
+  padding: 10px;
 }
 
 .detail-btn {
@@ -61,7 +69,7 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-  margin-top: auto; 
+  margin-left: auto;
 }
 
 .detail-btn:hover {
@@ -73,7 +81,7 @@
   cursor: not-allowed;
 }
 
-/* Day Complete Message */
+/* Day Complete Message Styles */
 .day-complete-message {
   color: green;
   text-align: center;
