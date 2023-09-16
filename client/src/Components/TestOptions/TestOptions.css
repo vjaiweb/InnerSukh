@@ -1,0 +1,48 @@
+body {
+  background-color: #e8f4ff;
+  /* overflow-x: hidden; */
+}
+
+.testOptions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+  height: 100vh;
+ /* Ensure the container takes up the full viewport height */
+}
+
+.img {
+  max-width: 60%;
+  height: auto;
+  opacity: 0.6;
+}
+
+.options {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #333b72;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.option:hover {
+  background-color: #4753a1;
+}
+  
