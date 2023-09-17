@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+.current-task-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.current-task {
+    width: 20vw;
+    margin: auto;
+    height: 20vh;
+    position: relative;
+}
+
+.current-day-tile
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5vh;
+    /* align-items: center; */
+}
+
+.current-day-header
+{
+    width:95%;
+    margin:auto;
+    background-color: rgb(147, 147, 207);
+    border-radius: 20px;
+    font-family: 'Caveat',cursive;
+    font-size: 30px;
+    padding:10px;
+    color: white;
+    text-align:center;
+}
+
+.current-task:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.meditation {
+    background: url('../../Assets/Images/Purple\ Gradient\ New\ Year\ Banner.png');
+    border-radius: 10px;
+    /* background-color: rgb(228, 191, 197); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease;
+}
+
+.current-detail-btn {
+    border-style: none;
+    background-color: rgb(180, 180, 241);
+    color: blue;
+    border-radius: 20px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    border: 2px solid white;
+}
+
+.affirmation {
+    background: url('../../Assets/Images/AFfirmation\ Streak\ Card.png');
+    border-radius: 10px;
+    /* background-color: rgb(228, 191, 197); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease;
+}
+
+.gratitude {
+    background: url('../../Assets/Images/Gratitude\ Streak\ Card.png');
+    border-radius: 10px;
+    /* background-color: rgb(228, 191, 197); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease;
+}

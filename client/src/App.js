@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router,  Route, Routes,useParams } from "react-router-dom";
 import "./App.css";
 import { Quiz } from "./Components/Quiz/Quiz.js";
-import Drop from "./pages/21days/21day";
+import Streak from "./pages/Streak/Streak";
 import Meditation from "./pages/meditation/Meditation";
 import Gratitude from "./pages/gratitude/Gratitude";
 import NavBar from "../src/Components/Navbar/NavBar";
@@ -24,7 +24,7 @@ function App() {
           <NavBar />
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/streak" element={<Drop/>}/>
+          <Route path="/streak" element={<Streak/>}/>
           <Route path="/meditation" element={<Meditation/>}/>
           <Route path="/gratitude" element={<Gratitude/>}/>
           <Route path="/affirmation" element={<Affirmation text={"Hello Gurmeet"}/>}/>
