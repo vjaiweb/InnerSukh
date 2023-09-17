@@ -11,3 +11,19 @@
     /* box-shadow: 0px 4px 15px rgba(46, 46, 46, 0.95); */
     
   }
+
+  .blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #e8f4ff;
+    filter: blur(72px);
+  }
+
+
+  .avatar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 30%;
+}

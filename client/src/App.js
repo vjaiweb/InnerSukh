@@ -12,6 +12,7 @@ import Home from "../src/pages/Home/Home";
 
 
 import Affirmation from "./pages/Affirmation/Affirmation";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   
@@ -28,9 +29,12 @@ function App() {
           <Route path="/gratitude" element={<Gratitude/>}/>
           <Route path="/affirmation" element={<Affirmation text={"Hello Gurmeet"}/>}/>
         </Routes>
+        {/* <Footer/> */}
       </div>
+      
 
       </Router>
+      
   </> 
   );
 }
