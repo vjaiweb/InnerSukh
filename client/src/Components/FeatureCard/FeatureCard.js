@@ -6,10 +6,15 @@ import CardContent from "@mui/material/CardContent";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import { red } from "@mui/material/colors";
+import meditation from "../../Assets/Images/Meditation.png";
+import gratitude from "../../Assets/Images/Gratitude.png";
+import affirmation from "../../Assets/Images/Affirmation.png";
 
 function FeatureCard() {
+ 
   return (
     <div className="featurecard">
+      <div className="blur" style={{ left: "7%" }}></div>
       <Card
         className="card"
         sx={{
@@ -23,20 +28,23 @@ function FeatureCard() {
         }}
       >
         <CardHeader
-          avatar={
-            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-              R
-            </Avatar>
+          avatar={<img src={meditation} className="avatar" />}
+          title={
+            <Typography variant="h6" fontWeight="bold" >
+              Meditation
+            </Typography>
           }
-          title={<Typography variant="h6" fontWeight="bold">Meditation</Typography>}
         />
         <CardContent>
           <Typography variant="body2" color="text.secondary">
-            Practice of mindfulness and inner reflection, fostering mental
-            clarity and emotional balance.
+            Meditation is a practice in which an individual uses a technique –
+            such as mindfulness, or focusing the mind on a particular object,
+            thought, or activity – to train attention and awareness, and achieve
+            a mentally clear and emotionally calm and stable state.
           </Typography>
         </CardContent>
       </Card>
+      <div className="blur" style={{ left: "38%" }}></div>
       <Card
         className="card"
         sx={{
@@ -50,20 +58,23 @@ function FeatureCard() {
         }}
       >
         <CardHeader
-          avatar={
-            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-              R
-            </Avatar>
+          avatar={<img src={gratitude} className="avatar" />}
+          title={
+            <Typography variant="h6" fontWeight="bold">
+              Gratitude
+            </Typography>
           }
-          title={<Typography variant="h6" fontWeight="bold">Gratitude</Typography>}
-          />
+        />
         <CardContent>
           <Typography variant="body2" color="text.secondary">
-            Practice of mindfulness and inner reflection, fostering mental
-            clarity and emotional balance.
+            Gratitude, thankfulness, or gratefulness is a feeling of
+            appreciation (or similar positive response) by a recipient of
+            another's kindness. This kindness can be gifts, help, favors, or
+            another form of generosity to another person.
           </Typography>
         </CardContent>
       </Card>
+      <div className="blur" style={{ right: "7%" }}></div>
       <Card
         className="card"
         sx={{
@@ -75,19 +86,21 @@ function FeatureCard() {
             transform: "scale(1.4)", // Adjust the scaling factor as needed
           },
         }}
-        >
+      >
         <CardHeader
-          avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-              R
-            </Avatar>
+          avatar={<img src={affirmation} className="avatar" />}
+          title={
+            <Typography variant="h6" fontWeight="bold" fontSize={"20px"}>
+              Affirmation
+            </Typography>
           }
-          title={<Typography variant="h6" fontWeight="bold">Affirmation</Typography>}
-          />
+        />
         <CardContent>
           <Typography variant="body2" color="text.secondary">
-            Practice of mindfulness and inner reflection, fostering mental
-            clarity and emotional balance.
+            Positive affirmations are short statements that can help brighten
+            your outlook on the world when you say them to yourself
+            regularly—like every morning when you first wake up—or write them
+            down in a journal before you go to sleep each night.
           </Typography>
         </CardContent>
       </Card>
