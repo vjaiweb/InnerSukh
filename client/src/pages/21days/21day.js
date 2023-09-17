@@ -74,7 +74,9 @@ function Drop() {
       <div className='content'>
         <h1>Days Streak</h1>
         <Day dayNumber={activeDay} onTaskCompletion={handleTaskCompletion} />
+        
       </div>
+    
     </div>
   );
 }

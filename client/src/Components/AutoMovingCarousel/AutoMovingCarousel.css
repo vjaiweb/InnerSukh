@@ -1,0 +1,32 @@
+.slider {
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+}
+
+.cardImg{
+  width: 350px;
+  height: auto;
+  border-radius: 50px;
+  text-align: center;
+  padding: 15px 0;
+  margin: auto;
+  transition: transform(0.2);
+}
+
+
+.card-container:hover{
+  transform: scale(1.2);
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 5%;
+}
+
+
