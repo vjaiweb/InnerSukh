@@ -32,11 +32,116 @@
     font-size: 18px;
     box-shadow: 0px 4px 15px rgba(46, 46, 46, 0.95);
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, border-color 0.3s ease; /* Add a smooth transition */
+    color: #1a4f87;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid 1a4f87;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background: transparent;
+    transition: all 1s;
+    overflow: hidden;
   }
   
   .quiz-button:hover {
-    background-color: #0056b3;
-    border-color: #0056b3; /* Adjust border color on hover */
+    color: #ffffff;
   }
-  
-  
+  .quiz-button::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: #1a4f87;
+    z-index: -1;
+    transition: all 1s;
+  }
+  .quiz-button:hover::before{
+    width: 160%;
+  }
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  .dialog {
+    /* border: 2px solid black; */
+    background: linear-gradient(to bottom, #ffffff, #bec0c0);
+    width: 400px;
+}
+
+  .blurred-background {
+    filter: blur(2px);
+   -webkit-filter: blur(5px);
+ }
+ 
+ .dialogbuttons{
+  display: flex;
+  flex-direction: column;
+  /* color: black; */
+  align-items: center;
+ }
+
+
+.btn {
+	color: white;
+	cursor: pointer;
+	font: bold 2.4rem 'Barlow Condensed';
+	letter-spacing: 0.1rem;
+	overflow: hidden;
+	padding: 10px 100px;
+	position: relative;
+	text-transform: uppercase;
+	z-index: 1;
+  width: 60%;
+}
+
+.btn.v1 {
+	background-color: #1d2b48;
+	transition: background-color 0.4s ease;
+  margin: 4%;
+  color: rgb(236, 225, 225);
+  border-radius: 10px;
+	&::before,
+	&::after {
+		/* background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjMuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA2MCAxMS40IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA2MCAxMS40OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0M0QUU1OTt9Cjwvc3R5bGU+CjxwYXRoIGlkPSJQYXRoXzE2NzciIGNsYXNzPSJzdDAiIGQ9Ik01OC43LDUuMkw0NS41LDBsMi4zLDUuMUgxOGwtNC4yLTQuMkgwbDQuOSw0LjlMMCwxMC41aDEzLjhMMTgsNi4zaDI5LjhsLTIuMyw1LjFsMTMuMi01LjIKCUw2MCw1LjdMNTguNyw1LjJ6IE01NC42LDYuNGwtNi43LDIuNmwxLjItMi42SDU0LjZ6IE0zLjEsOS4zbDMtM2gxMC4ybC0zLDNIMy4xeiIvPgo8L3N2Zz4K") center/contain no-repeat; */
+		content: '';
+		display: block;
+		height: 12px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 60px;
+		z-index: 1;
+	}
+	
+	&::before {
+		left: 20px;
+		transform: translate(calc(-100% - 20px), -50%);
+		transition: transform 0.2s ease;
+	}
+	
+	&::after {
+		right: 20px;
+		transition: transform 0.2s ease 0.1s;
+	}
+	
+	&:hover {
+		background-color: darken(#1d2b48, 5%);
+		
+		&::before {
+			transform: translate(0, -50%);
+			transition: transform 0.2s ease 0.1s;
+		}
+		
+		&::after {
+			transform: translate(calc(100% + 20px), -50%);
+			transition: transform 0.2s ease;
+		}
+	}
+}
+
