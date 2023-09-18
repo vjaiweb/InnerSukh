@@ -5,8 +5,9 @@ import DepressionQues from "../../Data/DepressionQuizData";
 import AddictionQues from "../../Data/AddictionQuizData";
 import YouthMentalQues from "../../Data/YouthMentalQuizData";
 import { Quest } from "../Quest/Quest";
+import { useLocation, useParams } from 'react-router-dom';
 
-export function Quiz(props) {
+export function Quiz() {
   const [showStart, setShowStart] = React.useState(true);
   const [score, setScore] = React.useState(0);
   const [showAnswers, setShowAnswers] = React.useState(false);
@@ -17,16 +18,18 @@ export function Quiz(props) {
   //   setShowStart(false);
   // }
 
+  const location = useLocation();
+  const { option } = location.state;
 
   function submit() {
     setShowAnswers(true);
   }
 
   function match(){
-    if(props.type === "anxiety") type = AnxietyQues
-    if(props.type === "depression") type = DepressionQues
-    if(props.type === "addiction") type = AddictionQues
-    if(props.type === "youth") type = YouthMentalQues
+    if(option === "anxiety") type = AnxietyQues
+    if(option === "depression") type = DepressionQues
+    if(option === "addiction") type = AddictionQues
+    if(option === "youth") type = YouthMentalQues
   }
 
   function selectAnswer(event, quest_id, option_id) {

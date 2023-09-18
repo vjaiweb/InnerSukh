@@ -28,6 +28,7 @@ function App() {
           <Route path="/meditation" element={<Meditation/>}/>
           <Route path="/gratitude" element={<Gratitude/>}/>
           <Route path="/affirmation" element={<Affirmation text={"Hello Gurmeet"}/>}/>
+          <Route path="/quiz/:id" element={<Quiz/>}/>
         </Routes>
         {/* <Footer/> */}
       </div>
