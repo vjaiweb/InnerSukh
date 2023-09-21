@@ -9,10 +9,9 @@ import Gratitude from "./pages/gratitude/Gratitude";
 import NavBar from "../src/Components/Navbar/NavBar";
 import SideBar from "../src/Components/SideBar/SideBar";
 import Home from "../src/pages/Home/Home";
-
-
 import Affirmation from "./pages/Affirmation/Affirmation";
 import Footer from "./Components/Footer/Footer";
+import LaughingExercise from "./pages/LaughingExercise/LaughingExercise";
 
 function App() {
   
@@ -29,6 +28,7 @@ function App() {
           <Route path="/gratitude" element={<Gratitude/>}/>
           <Route path="/affirmation" element={<Affirmation text={"Hello Gurmeet"}/>}/>
           <Route path="/quiz/:id" element={<Quiz/>}/>
+          <Route path="/face" element={<LaughingExercise/>}/>
         </Routes>
         {/* <Footer/> */}
       </div>
