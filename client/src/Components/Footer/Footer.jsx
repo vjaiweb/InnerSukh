@@ -4,8 +4,8 @@ import './Footer.css'
 export default function Footer() {
   return (
     <footer>
-      <div class="top">
-        <div class="pages">
+      <div className="top">
+        <div className="pages">
           <ul>
             <h3>Brand Name</h3>
             <li><a href="#">Home</a></li>
@@ -29,7 +29,7 @@ export default function Footer() {
             <li><a href="#">Our Values</a></li>
           </ul>
         </div>
-        <div class="newsletter">
+        <div className="newsletter">
           <h3>Stay in Touch</h3>
           <form>
             <input
@@ -42,13 +42,13 @@ export default function Footer() {
           </form>
         </div>
       </div>
-      <div class="social">
+      <div className="social">
       </div>
-      <div class="info">
-        <div class="legal">
+      <div className="info">
+        <div className="legal">
           <a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a>
         </div>
-        <div class="copyright">2021 Copyright &copy; Sean B</div>
+        <div className="copyright">2021 Copyright &copy; Sean B</div>
       </div>
     </footer>
   );
