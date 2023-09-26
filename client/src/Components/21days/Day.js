@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import './Day.css';
+import meditation from "../../Assets/Images/Meditation.png";
+import gratitude from "../../Assets/Images/Gratitude.png";
+import affirmation from "../../Assets/Images/Affirmation.png";
+import { Link } from 'react-router-dom';
+
+
 
 function Day({ dayNumber, onTaskCompletion }) {
   const [isMeditationClicked, setIsMeditationClicked] = useState(false);
@@ -35,17 +41,23 @@ function Day({ dayNumber, onTaskCompletion }) {
       <div className='day-content'>
         <div className='task-container'>
           <div className='task'>
+            <img src={meditation} className="avatar" />
             <span className='task-title'>Meditation</span>
-            <button
+            <Link to="/meditation">
+             <button
               className={`detail-btn ${isMeditationClicked ? 'completed' : ''}`}
               onClick={handleMeditationClick}
               disabled={isMeditationClicked}
-            >
+             >
               {isMeditationClicked ? 'Completed' : 'Meditation'}
-            </button>
+             </button>
+            </Link>
+            
           </div>
           <div className='task'>
+            <img src={gratitude} className="avatar" />
             <span className='task-title'>Gratitude</span>
+            <Link to="/gratitude">
             <button
               className={`detail-btn ${isGratitudeClicked ? 'completed' : ''}`}
               onClick={handleGratitudeClick}
@@ -53,9 +65,12 @@ function Day({ dayNumber, onTaskCompletion }) {
             >
               {isGratitudeClicked ? 'Completed' : 'Gratitude'}
             </button>
+            </Link>
           </div>
           <div className='task'>
+            <img src={affirmation} className="avatar" />
             <span className='task-title'>Affirmations</span>
+            <Link to="/affirmation">
             <button
               className={`detail-btn ${isAffirmationClicked ? 'completed' : ''}`}
               onClick={handleAffirmationClick}
@@ -63,6 +78,7 @@ function Day({ dayNumber, onTaskCompletion }) {
             >
               {isAffirmationClicked ? 'Completed' : 'Affirmation'}
             </button>
+            </Link>
           </div>
         </div>
         {numClicked === 3 && (

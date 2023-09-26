@@ -35,6 +35,8 @@ import './Streak.css';
 import Calendar from "../../Components/Calendar/Calendar"
 import CurrentDay from "../../Components/CurrentDay/CurrentDay"
 import LeaderBoard from '../../Components/LeaderBoard/LeaderBoard';
+import Graph23 from '../../Components/dashboard/datagraph';
+import Footer from '../../Components/Footer/Footer';
 
 function Drop() {
   const [completedDays, setCompletedDays] = useState([]);
@@ -74,16 +76,26 @@ function Drop() {
 
   let days=3; // dummy data
   return (
-    <div className='Streak-Container'>
+    <div>
+      <div className='Streak-Container'>
       <div className='Left-Streak-Container'>
         <CurrentDay/>
+        <br/>
+        <br/>
+        <br/>
+        <Graph23/>
         <LeaderBoard/>
       </div>
       <div className='Right-Streak-Container'>
         <Calendar/>
         <div className='Right-Streak-Calendar-Desc'>✨ {days} Days Completed</div>
       </div>
+      
     </div>
+    <Footer/>
+    </div>
+    
+    
   );
 }
 
