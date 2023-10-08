@@ -14,9 +14,9 @@ function FeatureCard() {
  
   return (
     <div className="featurecard">
-      <div className="blur" style={{ left: "7%" }}></div>
+      {/* <div className="blur" style={{ left: "7%" }}></div> */}
       <Card
-        className="card"
+        className="home_card"
         sx={{
           background: "linear-gradient(to bottom, #ffffff, #f3f3f3)", // Add the gradient background
           boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.6)",
@@ -44,9 +44,9 @@ function FeatureCard() {
           </Typography>
         </CardContent>
       </Card>
-      <div className="blur" style={{ left: "38%" }}></div>
+      {/* <div className="blur" style={{ left: "38%" }}></div> */}
       <Card
-        className="card"
+        className="home_card"
         sx={{
           background: "linear-gradient(to bottom, #ffffff, #f3f3f3)", // Add the gradient background
           boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.6)",
@@ -74,9 +74,9 @@ function FeatureCard() {
           </Typography>
         </CardContent>
       </Card>
-      <div className="blur" style={{ right: "7%" }}></div>
+      {/* <div className="blur" style={{ right: "7%" }}></div> */}
       <Card
-        className="card"
+        className="home_card"
         sx={{
           background: "linear-gradient(to bottom, #ffffff, #f3f3f3)", // Add the gradient background
           boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.6)",

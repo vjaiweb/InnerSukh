@@ -37,6 +37,7 @@ import CurrentDay from "../../Components/CurrentDay/CurrentDay"
 import LeaderBoard from '../../Components/LeaderBoard/LeaderBoard';
 import Graph23 from '../../Components/dashboard/datagraph';
 import Footer from '../../Components/Footer/Footer';
+import NavBar from "../../Components/Navbar/NavBar";
 
 function Drop() {
   const [completedDays, setCompletedDays] = useState([]);
@@ -77,6 +78,7 @@ function Drop() {
   let days=3; // dummy data
   return (
     <div>
+      <NavBar />
       <div className='Streak-Container'>
       <div className='Left-Streak-Container'>
         <CurrentDay/>
