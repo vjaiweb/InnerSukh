@@ -183,7 +183,7 @@ const LaughingExercise = () => {
           </div>
         </div>
       </div> */}
-        <h1>Face Detection</h1>
+        <h1>Smiling Exercise</h1>
         <div className="appvide">
           <video crossOrigin="anonymous" ref={videoRef} autoPlay></video>
         </div>
@@ -194,9 +194,9 @@ const LaughingExercise = () => {
           className="appcanvas"
         />
         <h1>Your Happiness Score is {happyScore}/100</h1>
-        <h2>{secondsAboveThreshold}</h2>
+        {/* <h2>{secondsAboveThreshold}</h2> */}
       </div>
-      <button className="quiz-button" onClick={handleClick}>Take a Quiz</button>
+      {/* <button className="quiz-button" onClick={handleClick}>Take a Quiz</button> */}
     </>
   );
 }

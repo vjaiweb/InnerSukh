@@ -14,10 +14,12 @@ import affirmation from "../../Assets/Images/Affirmation.png";
 import Helplines from '../../Components/dashboard/helpline';
 import Adetails from '../../Components/dashboard/analysis';
 import Footer from '../../Components/Footer/Footer';
+import NavBar from "../../Components/Navbar/NavBar";
 
 function Dash() {
   return (
     <div className='parent'>
+      <NavBar />
       <div className='container'>
       <div className='card'>
           <div className='card-body'>

@@ -22,7 +22,7 @@ const ResultComponent = ({ quizResult }) => {
   const h2Style = {
     fontSize: '24px',
     marginBottom: '10px',
-  };
+  };  
 
   const pStyle = {
     fontSize: '18px',
@@ -47,7 +47,7 @@ const ResultComponent = ({ quizResult }) => {
     const colorTimer = setInterval(() => {
       const randomColor = getRandomBrightColor();
       setBackgroundColor(randomColor);
-    }, 10000);
+    }, 5000);
 
     return () => clearInterval(colorTimer);
   }, []);

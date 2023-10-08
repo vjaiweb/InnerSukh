@@ -5,7 +5,7 @@
     margin-top: 0;
 }
 
-.card {
+.home_card   {
     flex: 1; /* Distribute available space evenly among cards */
     margin: 4%; /* Adjust the margin as needed for spacing */
     /* box-shadow: 0px 4px 15px rgba(46, 46, 46, 0.95); */
